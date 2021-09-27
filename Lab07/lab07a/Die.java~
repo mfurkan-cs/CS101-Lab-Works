@@ -1,0 +1,42 @@
+/**
+ * Die class
+ */
+public class Die {
+   
+   // properties
+   int faceValue;
+
+   // constructors
+   public Die()
+   {
+      faceValue = (int)(6 * Math.random() + 1);
+   }
+   
+   // methods
+   /**
+    * rolling
+    * @return integer faceValue
+    */ 
+   public int roll()
+   {
+      faceValue = (int) (6 * Math.random() + 1);
+      return faceValue;
+   }
+   
+   /**
+    * @return integer faceValue
+    */ 
+   public int getFaceValue()
+   {
+      return faceValue;
+   }
+   
+   /**
+    * toString method
+    * @return String toString
+    */ 
+   public String toString()
+   {
+      return "The face value is: " + faceValue;
+   }
+}

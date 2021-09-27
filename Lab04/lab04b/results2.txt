@@ -1,0 +1,5 @@
+ Please enter 100 values
+ The sum is 5324 while the number of values is 100
+ The average is 53.24
+ The maximum value is 98
+ The minimum value is -2

@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+/**
+ * Pi Operations 
+ * @author Murat Furkan Uðurlu
+ * @version 07/11/2019
+ */ 
+public class lab05d
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // variables
+      int n;
+      double sum;
+      double operation;
+      double difference;
+      double u;
+      
+      // program code
+      
+      //Using Math.PI function
+      operation = 0;
+      System.out.println( Math.PI);
+      
+      //Calculating PI
+      System.out.println( "Please enter a value");
+      n = scan.nextInt();
+      sum = 0;
+      for( int k = 0; k < n; k++)
+      {
+         operation = ((4.0 / ((2 * k ) + 1 )) * Math.pow( -1 , k ));
+         sum = sum + operation;
+      }
+      System.out.println( sum);
+      System.out.println();
+      
+      //Wanting a value
+      System.out.print( "Please enter the value that shows difference");
+      u = scan.nextDouble();  
+      sum = 0;
+      for( int k = 0; u < Math.abs(operation); k++)
+      {
+         operation = ((4.0 / ((2 * k ) + 1 )) * Math.pow( -1 , k ));
+         sum = sum + operation; 
+      }    
+      System.out.print( sum);
+      difference = Math.PI - sum;
+      if( difference > (0.01))
+      {
+         System.out.println( "error...");
+      }
+   }
+}

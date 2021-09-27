@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="RollingDiceManyTimes.java" package="" timestamp="12-Dec-2019 11:35:39">
+        <select from="805" to="805"/>
+        <scroll column="856" row="0"/>
+      </file>
+      <file name="Die.java" package="" timestamp="11-Dec-2019 20:02:38">
+        <select from="805" to="805"/>
+        <scroll column="856" row="0"/>
+      </file>
+      <file name="Dice.java" package="" timestamp="11-Dec-2019 20:03:32">
+        <select from="805" to="805"/>
+        <scroll column="856" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

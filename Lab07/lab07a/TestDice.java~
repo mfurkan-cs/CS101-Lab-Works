@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+/**
+ * Testing Dice 
+ * @author Murat Furkan Uðurlu
+ * @version 28/11/2019
+ */ 
+public class TestDice
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+
+      // program code
+      System.out.println( "Start...");
+
+
+      System.out.println( "End.");
+   }
+
+}

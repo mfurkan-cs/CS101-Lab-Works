@@ -1,0 +1,97 @@
+/**
+ * Library Application
+ */
+public class LibraryBook {
+   
+   // properties
+   private String title;
+   private String author;
+   private String dueDate;
+   private int timesLoaned;
+   
+   // constructors
+   /**
+    * @param1 String title
+    * @param2 String author
+    * @param3 String dueDate
+    * @param4 int timesLoaned
+    * @return info
+    */ 
+   public LibraryBook(String title, String author)
+   {
+      this.title = title;
+      this.author = author;
+      this.dueDate = "";
+      this.timesLoaned = 0;  
+   }
+   
+   // methods
+   /**
+    * describing due date, loan times and if it is loaned
+    * @return info
+    */ 
+   public String toString()
+   {
+      String info;
+      info = title + " is written by " + author + ".";
+      
+      if( timesLoaned == 0)
+      {
+         info = title + " is written by " + author + ". This book is never loaned.";
+      }
+      else
+      {
+         info = title + " is written by " + author + ". The book is loaned " + timesLoaned + " times." + " Due date for it is " + dueDate;
+      }
+      return info;
+   }
+   /**
+    * detecting dueDate and times loaned
+    */ 
+   public void loanBook( String dueDate)
+   {
+      if( onLoan())
+      {
+         System.out.println( "The book has been loaned by someone else!");
+      }
+      else
+      {
+         this.dueDate = dueDate;
+         timesLoaned++;
+      }
+   }
+   
+   /**
+    * returnBook method
+    * resetting dueDate
+    */ 
+   public void returnBook()
+   {
+      dueDate = "";
+   }
+   
+   /**
+    * showing how many times it loaned
+    * @return timesLoaned
+    */ 
+   public int getTimesLoaned()
+   {
+      System.out.print( "How many times the book is loaned is: ");
+      return timesLoaned;
+   }
+   
+   /**
+    * @return boolean false or true
+    */ 
+   public boolean onLoan()
+   {
+      if(dueDate.equals( ""))
+      {
+         return false;
+      }
+      else
+      {
+         return true;
+      }
+   }
+}

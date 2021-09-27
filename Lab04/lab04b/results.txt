@@ -1,0 +1,5 @@
+ Please enter 6 values
+ The sum is 19 while the number of values is 6
+ The average is 3.1666666666666665
+ The maximum value is 5
+ The minimum value is 1

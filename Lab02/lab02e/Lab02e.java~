@@ -1,0 +1,29 @@
+/**
+ * HTML TASK
+ * @author Murat Furkan Uðurlu
+ * @version 17/10/2019
+ */ 
+public class Lab02e
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+      final String DOC = "<!DOCTYPE html>";
+      final String HTML = "<html>";
+      final String HEAD = 
+
+      // variables
+      int age;
+      double salary;
+      String comments;
+
+      // program code
+      System.out.println( "Please enter the age, salary and comments");
+
+
+      System.out.println( "End.");
+   }
+
+}
